@@ -21,10 +21,12 @@ while True:
 
     #cv2.rectangle(frame,(0,0),(478,60),(0,255,0),1)
     text = 'sPycam'
+    closeText = 'Press `q` to close'
     font = cv2.FONT_HERSHEY_SIMPLEX
     
     if count % 20 == 0: cv2.circle(frame,(30,35),10,(0,0,255), -1)
     cv2.putText(frame, text, (45,40),font,1,(255,255,255),2)
+    cv2.putText(frame, closeText, (45,80),font,1,(255,255,255),2)
     count += 1
     
     try:
